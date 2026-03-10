@@ -1,0 +1,56 @@
+/* remove margens padrao do navegador*/
+body{
+    margin: 30 ;
+    font-family: Comic 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgb(89, 244, 89);
+     text-align: center;
+    color:rgb(0, 91, 5);
+}
+/* cabeçalho do site */
+header{
+    background-color: #fafcf9;
+    padding: 20px;
+    text-align: center;
+}
+/* menu*/
+nav a{
+    color: rgb(56, 255, 56);
+    text-decoration: none;
+    margin: 10px;
+}
+/* muda de cor ao interagir com o mouse*/
+nav a:hover{
+    color: black;
+}
+/*area principal*/
+main{
+padding: 40px;
+}
+/*caixa de cada jgo*/
+.game{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+/*titulo do jogo*/
+.game h2{
+    color: lime;
+}
+/*botao*/
+button{
+    background-color: lime;
+    border-radius: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+/* efeito do botao*/
+button:hover{
+    background-color: rgb(89, 244, 89);
+}
+/*roda-pe*/
+footer{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+}
