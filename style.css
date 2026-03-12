@@ -1,56 +1,75 @@
-/* remove margens padrao do navegador*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+/*fundo com um tom azul*/
 body{
-    margin: 30 ;
-    font-family: Comic 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:rgb(89, 244, 89);
-     text-align: center;
-    color:rgb(0, 91, 5);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh; /* vh= viewport height */
+background:#00051c;
+color: antiquewhite;
 }
-/* cabeçalho do site */
-header{
-    background-color: #fafcf9;
-    padding: 20px;
-    text-align: center;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
 }
-/* menu*/
-nav a{
-    color: rgb(56, 255, 56);
-    text-decoration: none;
-    margin: 10px;
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 440px;
+    /* sombras ajustadas para o brilho sutil*/
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.4), inset -5px -5px 15px rgba( 255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 20px;
 }
-/* muda de cor ao interagir com o mouse*/
-nav a:hover{
-    color: black;
+.container .card .box{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #12205a;
+    border: 1px solid #222;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
 }
-/*area principal*/
-main{
-padding: 40px;
+
+/* gratiente musica neon no hover ( roxo pra ciano*/
+.container .card:hover .box{
+    transform: translateY(-50px);
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    box-shadow: 0 15px 35px rgba(142, 45, 226, 0.4);
 }
-/*caixa de cada jgo*/
-.game{
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 30px;
+.container .card .box .content{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin: 15px;
+text-align: center;
 }
-/*titulo do jogo*/
-.game h2{
-    color: lime;
+.container .card .box .content i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    font-size: 100px;
+  margin-right: 0px;
 }
-/*botao*/
-button{
-    background-color: lime;
-    border-radius: 30px;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-/* efeito do botao*/
-button:hover{
-    background-color: rgb(89, 244, 89);
-}
-/*roda-pe*/
-footer{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 15px;
+.container .card .box .content h2{
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    align-items:baseline;
+    font-size: 100px;
+    color: #0000006f;
 }
